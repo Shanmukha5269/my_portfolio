@@ -572,17 +572,6 @@ body {
   gap: 8px;
 }
 
-.badge-featured {
-  padding: 6px 14px;
-  background: var(--primary);
-  color: white;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
 .project-title {
   font-size: 2rem;
   margin-bottom: 8px;
