@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shanmukha D | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Devicons for skill icons -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
     <div class="profile-section">
       <img src="assets/profile.jpg" alt="Shanmukha D" class="sidebar-pic" />
       <h2>Shanmukha D</h2>
-      <p class="title">Backend Developer | DevOps & Cloud</p>
+      <p class="title">DevOps & Cloud | Backend Developer</p>
       <p class="location">📍 Bengaluru, Karnataka</p>
     </div>
     
@@ -51,8 +53,8 @@
 
       <div class="intro-cta">
         <a href="#projects" class="btn-primary">View My Work</a>
-        <!-- <a href="#contact" class="btn-secondary">Let's Talk</a> -->
-        <!-- <a href="assets/My_Resume_Latest.pdf" class="resume-btn" download>Download Resume</a> -->
+        <a href="#contact" class="btn-secondary">Let's Talk</a>
+        <a href="https://www.linkedin.com/in/shanmukha-d-406846304/" target="_blank" class="btn-secondary">Connect with me</a>
       </div>
       
       <div class="quick-stats">
@@ -70,14 +72,17 @@
       <h2 class="section-heading">About Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p class="intro-text">
-            I build scalable backend systems, design REST APIs, and work with databases to handle real-world applications. 
+          <p class="intro-text"> 
+            DevOps enthusiast with hands-on experience in Docker, Kubernetes and AWS. Interested in building containerized applications,
+            automating deployments, and learning modern DevOps practices.
+          </p>
+          <p>
             Along with backend development, I use DevOps practices to ensure reliable and efficient deployments. 
             Currently in 6th semester CSE at UVCE, passionate about building and scaling systems end-to-end.
           </p>
           <p>
             As <strong>Student Coordinator at MARVEL R&D Lab, UVCE</strong>, I conducted hands-on Docker workshops 
-            and help students understand DevOps practices. I'm always exploring new tools and technologies 
+            and help students understand DevOps. I'm always exploring new tools and technologies 
             in the cloud-native ecosystem.
           </p>
           
@@ -86,17 +91,17 @@
               <span class="highlight-icon">🎯</span>
               <div>
                 <strong>Focus Areas</strong>
-                <p>Backend Development, REST APIs, Databases, System Design, Docker, AWS</p>
+                <p>Backend Development, Contanarization, Orchestration, Infrastructure</p>
               </div>
             </div>
 
-            <div class="highlight-item">
+            <!-- <div class="highlight-item">
               <span class="highlight-icon">💡</span>
               <div>
                 <strong>Current Learning</strong>
-                <p>Backend system design, Kubernetes orchestration, Terraform</p>
+                <p>System design, Kubernetes orchestration, Terraform</p>
               </div>
-            </div>
+            </div> -->
 
             <div class="highlight-item">
               <span class="highlight-icon">🏆</span>
@@ -143,10 +148,10 @@
             <i class="devicon-docker-plain colored skill-icon"></i>
             <span class="skill-name">Docker</span>
           </div>
-          <!-- <div class="skill-card">
+          <div class="skill-card">
             <i class="devicon-jenkins-plain skill-icon"></i>
             <span class="skill-name">Jenkins</span>
-          </div> -->
+          </div>
           <div class="skill-card">
             <i class="devicon-nginx-original colored skill-icon"></i>
             <span class="skill-name">Nginx</span>
@@ -227,16 +232,72 @@
 
     <section id="projects" class="section">
       <h2 class="section-heading">Projects</h2>
-    
       <div class="projects-container">
         <article class="project-card">
           <div class="project-header">
             <div class="project-number">01</div>
           </div>
+          <h3 class="project-title">Kubernetes-Orchestrated Application</h3>
+          <div class="project-description">
+            <p>
+              Built a full-stack ToDo application with backend logic to manage user tasks and ensure efficient data handling.
+              Implemented API endpoints to handle CRUD operations and structured request-response flow.
+            </p>
+            <p>
+              Orchestrated the application on Kubernetes using Minikube by creating Deployments, Services, and containerized infrastructure for scalable and isolated execution.
+              Configured inter-service communication, port forwarding within the Kubernetes cluster.
+            </p>
+            </p>
+          </div>
+          <div class="project-tech-stack">
+            <span class="tech-tag"><i class="devicon-spring-boot"></i> Spring Boot</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
+            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Shanmukha5269/todo-app-end-to-end" target="_blank" class="project-link">
+              <i class="devicon-github-original"></i> View Code
+            </a>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-number">02</div>
+          </div>
+          <h3 class="project-title">Containerized Web Application with Nginx Reverse Proxy</h3>
+          <div class="project-description">
+            <p>
+              Developed a application integrating Gemini API for calculating food quantities in grams.
+              Designed structured API interactions to process user inputs and return accurate results.
+            </p>
+            <p>
+              Used MySQL for persistent data storage and Docker Compose to manage multi-container services.
+              Configured Nginx as a reverse proxy to improve security and routing.
+            </p>
+          </div>
+          <div class="project-tech-stack">
+            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
+            <span class="tech-tag"><i class="devicon-nginx-original"></i> Nginx</span>
+            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+            <span class="tech-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+            <span class="tech-tag">Docker Compose</span>
+            <span class="tech-tag">Gemini API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Shanmukha5269/ThinkFoody" target="_blank" class="project-link">
+              <i class="devicon-github-original"></i> View Code
+            </a>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-number">03</div>
+          </div>
           <h3 class="project-title">Secure Task Manager Backend with JWT Authentication</h3>
-          <!-- <p class="project-tagline">Backend API with End-to-End Deployment</p> -->
-
           <div class="project-description">
             <p>
               Developed a backend-driven task management system supporting CRUD operations for efficient task handling.
@@ -246,14 +307,12 @@
               Integrated database for persistent storage and containerized the application using Docker for consistent environments.
             </p>
           </div>
-
           <div class="project-tech-stack">
-            <span class="tech-tag"><span class="iconify" data-icon="simple-icons:springboot"></span> Spring Boot</span>
+            <span class="tech-tag"><i class="devicon-spring-boot"></i> Spring Boot</span>
             <span class="tech-tag">REST APIs</span>
-            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySql</span>
+            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
             <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
           </div>
-
           <div class="project-links">
             <a href="https://github.com/Shanmukha5269/task-manager-end-to-end" target="_blank" class="project-link">
               <i class="devicon-github-original"></i> View Code
@@ -261,142 +320,68 @@
           </div>
         </article>
 
-
         <article class="project-card">
           <div class="project-header">
-            <div class="project-number">02</div>
+            <div class="project-number">04</div>
           </div>
-          
-          <h3 class="project-title">Containerized Web Application with Nginx Reverse Proxy</h3>
-          <!-- <p class="project-tagline">Full-Stack System with Complete Containerization</p> -->
-          
-          <div class="project-description">
-            <p>
-              Developed a application integrating Gemini API for calculating food quantities in grams.
-              Designed structured API interactions to process user inputs and return accurate results.
-            <p>
-              Used MySQL for persistent data storage and Docker Compose to manage multi-container services.
-              Configured Nginx as a reverse proxy to improve security and routing. 
-            </p>
-          </div>
-          
-          <div class="project-tech-stack">
-            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
-            <span class="tech-tag"><i class="devicon-nginx-original"></i> Nginx</span>
-            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
-            <span class="tech-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
-            <span class="tech-tag">Docker Compose</span>
-            <span class="tech-tag">Gemini API</span>
-          </div>
-          
-          <div class="project-links">
-            <a href="https://github.com/Shanmukha5269/ThinkFoody" target="_blank" class="project-link">
-              <i class="devicon-github-original"></i> View Code
-            </a>
-          </div>
-        </article>
-
-
-        <article class="project-card">
-          <div class="project-header">
-            <div class="project-number">03</div>
-          </div>
-
           <h3 class="project-title">Static Webpage Deployment using Docker and Kubernetes</h3>
-          <!-- <p class="project-tagline">Optimized Deployment using Nginx & Docker</p> -->
-
           <div class="project-description">
             <p>
-              Deployed a static web application..
-            </p>
-            <p>
+              Deployed a static web application with optimized performance.
               Containerized the application using Docker, ensuring consistent deployment across environments.
             </p>
             <p>
-              Deployed in Kubernetes using minikube.
+              Deployed in Kubernetes using minikube for orchestration and scaling.
             </p>
           </div>
-
           <div class="project-tech-stack">
             <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
-            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i>Kubernetes</span>
-            <span class="tech-tag"><i class="devicon-linux-plain"></i>Linux</span>
+            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
           </div>
-
           <div class="project-links">
             <a href="https://github.com/Shanmukha5269/static-page-end-to-end" target="_blank" class="project-link">
               <i class="devicon-github-original"></i> View Code
             </a>
           </div>
         </article>
+      </div>
 
-
-        <article class="project-card">
-          <div class="project-header">
-            <div class="project-number">04</div>
-          </div>
-
-          <h3 class="project-title">ToDo Application</h3>
-          <!-- <p class="project-tagline">Application with Backend Logic & Deployment</p> -->
-
-          <div class="project-description">
-            <p>
-              Built a full-stack ToDo application with backend logic to manage user tasks and ensure efficient data handling.
-              Implemented API endpoints to handle CRUD operations and structured request-response flow.
-            </p>
-            <p>
-              Containerized application services using Docker and ensured smooth deployment through automated pipelines.
-            </p>
-          </div>
-
-          <div class="project-tech-stack">
-            <span class="tech-tag"><span class="iconify" data-icon="simple-icons:springboot"></span> Spring Boot</span>
-            <span class="tech-tag">REST API</span>
-            <span class="tech-tag"><i class="devicon-mysql-plain"></i> MySql</span>
-            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
-          </div>
-
-          <div class="project-links">
-            <a href="https://github.com/Shanmukha5269/todo-app-end-to-end" target="_blank" class="project-link">
-              <i class="devicon-github-original"></i> View Code
-            </a>
-          </div>
-        </article>
-
-      
       <div class="more-projects-cta">
         <a href="https://github.com/Shanmukha5269?tab=repositories" target="_blank" class="btn-outline">
-          View All Projects on GitHub →
+          View All Projects →
         </a>
       </div>
     </section>
 
     <!-- <section id="contact" class="section">
-      <h2 class="section-heading">Let's Build Something Together</h2>
+      <h2 class="section-heading">Contact</h2>
       <p class="section-subtitle">Open to internships, collaborations, and DevOps discussions</p>
       
       <div class="contact-container">
         <form class="contact-form" id="contact-form">
+          <div class="success-message"></div>
+          <div class="error-message"></div>
+          
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <input type="text" id="name" name="name" placeholder="Name" required>
             </div>
             
             <div class="form-group">
               <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <input type="email" id="email" name="email" placeholder="abc@example.com" required>
             </div>
           </div>
           
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required>
+            <input type="text" id="subject" name="subject" required>
           </div>
           
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
           </div>
           
           <button type="submit" class="btn-submit">
@@ -416,32 +401,30 @@
           </div>
           
           <div class="info-card">
-            <div class="info-card-icon">📱</div>
-            <h4>Phone</h4>
-            <a href="tel:+918197461678">+91-8197461678</a>
-          </div>
-          
-          <div class="info-card">
-            <div class="info-card-icon">💼</div>
-            <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/shanmukha-d-406846304/" target="_blank">Connect with me</a>
-          </div>
-          
-          <div class="info-card">
             <div class="info-card-icon">💻</div>
             <h4>GitHub</h4>
             <a href="https://github.com/Shanmukha5269" target="_blank">@Shanmukha5269</a>
           </div>
         </div>
       </div>
-    </section>
-  </main> -->
+    </section> -->
+  </main>
 
-  <!-- <footer class="footer">
-    <p>Built with passion • © 2026 Shanmukha D</p>
-  </footer> -->
+  <footer class="footer">
+    <p>Passion for DevOps • © 2026 Shanmukha D</p>
+  </footer>
 
-  <script src="script.js"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>   
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <script>
+    if (window.emailjs) {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    }
+  </script>   
 </body>
 </html>
